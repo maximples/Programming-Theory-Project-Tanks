@@ -31,7 +31,7 @@ public class car_M : EnemyController
         {
             DeathUnit(tipe);
         }
-        if (live)
+        if (live&& GameManager.Instance.activ)
         {
             targetEnemy = target.transform.position;
             PathWay(targetEnemy, detectionRadius, AttackingStandRadius, AttackingRadius);

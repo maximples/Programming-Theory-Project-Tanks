@@ -135,7 +135,11 @@ public class EnemyController : MonoBehaviour
     {
         if (other.gameObject.CompareTag("PlayarGun_1"))
         {
-            HP = HP - PlayerController.attack;
+            HP = HP - PlayerController.attack/ SaveData.Instance.difficultyLevel;
+        }
+        if (other.gameObject.CompareTag("MissilePlayer"))
+        {
+            HP = HP - 30/ SaveData.Instance.difficultyLevel;
         }
 
     }

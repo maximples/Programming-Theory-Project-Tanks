@@ -137,6 +137,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2331224040668346773}
     m_Modifications:
+    - target: {fileID: 9086746105339612429, guid: 09c4379c385f84941ae8baf9937da239, type: 3}
+      propertyPath: InitialModule.size3D
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086746105339612429, guid: 09c4379c385f84941ae8baf9937da239, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 9086746105353409645, guid: 09c4379c385f84941ae8baf9937da239, type: 3}
       propertyPath: m_Name
       value: FlashTank

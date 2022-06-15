@@ -32,7 +32,6 @@ public class PlayerController : MonoBehaviour
     public TextMeshProUGUI misselsCountText;
     public TextMeshProUGUI News;
 
-    // Start is called before the first frame update
     void Start()
     {
         misselsCountText.text = "Ракеты: " + misselsCount;
@@ -48,7 +47,6 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(Vector3.up * turnSpeed * Time.deltaTime * horizontalInput);
         
     }
-    // Update is called once per frame
     void Update()
     {
         RotationTurrent();
@@ -76,8 +74,6 @@ public class PlayerController : MonoBehaviour
         
         }
 
-        //if(gun.transform.position.y> -1.7)
-        //{ gun.transform.Translate(Vector3.up * 0.05f); }
     }
     private void RotationTurrent()
     {
